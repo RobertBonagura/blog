@@ -1,0 +1,30 @@
+.link {
+  color: black;
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none
+}
+
+.navLink {
+  color: black;
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none
+}
+
+.activeLink {
+  color: black;
+  font-weight: bold;
+  text-shadow: none;
+  background-image: none
+}
+
+.navLink:hover {
+  font-weight: 600;
+  opacity: 0.75
+}
+
+
+.activeLink:hover {
+  opacity:1 
+}

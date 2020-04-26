@@ -1,0 +1,26 @@
+html {
+  background-color: #fafaff;
+}
+
+.card {
+  background-color: #fcffff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 1px #778899;
+  margin: 3rem auto;
+  padding: 1px 1rem 30px
+}
+
+.date {
+  font-size: medium;
+  font-weight: 100;
+  color: #00000086;
+  margin-top: -.25rem
+}
+
+.description {
+  margin-top: -1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
