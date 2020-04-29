@@ -11,7 +11,7 @@ const ListLink = props => (
 export default () => (
   <footer id="footer"style={{ position: `absolute`, bottom: 0, width: `100%`, height: `2.5rem` }}>
     <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-      <h6 style={{ display: `inline` }}>Bright Eyed Solutions LLC</h6>
+      <h6 style={{ display: `inline` }}>Big Little Win</h6>
     </Link>
     <ul style={{ listStyle: `none`, float: `right` }}>
       <ListLink to="/">Home</ListLink>

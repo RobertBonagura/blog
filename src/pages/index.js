@@ -14,8 +14,8 @@ export default ({ data }) => (
     <p> 
       Regardless of how small an accomplishment is, it is worth sharing and celebrating.</p>
     <p>
-      I am going to use this blog to detail how Ive used AWS to deploy my very own website, used 
-      Gatsby to dynamically generate content for it and what kind of tools I use along the way.
+      I am going to use this blog to detail how I use AWS to deploy my very own website, how I dynamically generate
+      content for it with Gatsby, and everything else I learn along the way.
     </p>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <Link to={node.fields.slug} className={layoutStyles.link}>

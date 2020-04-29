@@ -1,10 +1,43 @@
 ---
-title: How to use Git and actually understand what you're doing 
+title: How to push to GitHub and actually understand what you're doing 
 date: "4/26/20"
-description: "What is Git? And why should anyone should use it or GitHub? To answer these questions, this blog dives into what makes Git so useful and provides a tutorial for initializing your first repository."
+featuredImage: ../img/pushing-up-hill_1280.png
+description: "Being able to share projects on GitHub is a must for any developer. Despite how easy it is to copy/paste your way through a tutorial, a thorough understanding of basic Git commands is still essential."
+---
+There are countless tutorials and StackOverflow answers supplying all the commands you need. 
+### However, copying-and-pasting can only get you so far.
+
+It may get your project on GitHub, but once it comes time to manage a merge conflict, you're going to need to have a better understanding of these Git commands.
+
+If you have no idea what I'm talking about, and just want to learn how to push your project to GitHub, then this article is for you. 
+
+If you've already pushed to GitHub before, consider whether or not you can answer these questions.
+* Why does an index need to be staged for commit?
+* How can I revert my changes from HEAD to a previous commit?
+* What are the differences between pushing, merging and fetching?
+
+If these questions sound confusing, or if you are unsure of their answers, you probably haven't had anyone explain them to you properly. And that's okay, that's what I'm here for.
+
+## First Things First
+
+My biggest piece of advice starts with a simple reminder. Git is such a powerful tool that one can go down a rabbit hole in search of understanding all of the nuanced details -- and that is not what this article is for.
+
+The goal of this article is to not tell you everything there is to know about Git. Instead, the goal is show you all of the neccessary commands so that you can share your Git repository to GitHub -- and actually understand what is going on in the process.
+
+
+
+
+
+
 ---
 
-Being able to share projects on GitHub has become a Must Know-How for any developer. 
+This is why in this tutorial, I have provided a tutorial to push one of your projects on GitHub, where every one every step of the way we will explain uand understand what is happening. turn one of your projects into a **working directory**. This what Git calls a folder on your local machine that has a Git **repository** in it.
+
+Once you have a working directory 
+
+This repository is a hidden folder in your working directory that allows you to use the Git command line tool.
+
+This gives you complete control over your working directory. 
 
 There are alot of great IDE's out there that make it easy to push and pull your project, however it is my opinion that learning Git on the Command Line first trumps all other options.
 
@@ -22,11 +55,9 @@ Plus, what developer doesnt love being able to work from their command line?
 * Why use them?
 
 ### What is Git?
-Straight from git-scm.com, "Git is a free and open source distributed version control system". 
+Using the Git command line tool gives you complete control over any directory on your computer. In fact, you're not limited to just the directories on your computer... but we'll get to that part later.
 
-Using the Git command line tool gives you complete control over any directory on your computer. Actually... not just the directories on your computer... but we'll get to that part later.
-
-When using Git, this directory controlled by Git is known as a "repository", specifically a local repository because it will reside on your local machine.
+To use Git, you create a **local repository** with the command `git init `. This creates a local repository because it will reside on your local machine.
 
 Initalizing a local repository gives you the power of version control. This means that you can take a snapshot of your project at any point. When using git, taking a snapshot like this is called a commit.
 * Your first commit saves the state of every file within your repository.
