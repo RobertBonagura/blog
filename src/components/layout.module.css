@@ -1,3 +1,17 @@
+html {
+  background-color: #fafaff;
+}
+
+.blogPostContainer {
+  background-color: #fcffff;
+}
+
+.content {
+  margin-top: 100px;
+  padding-bottom: 2.5rem;
+}
+
+
 .link {
   color: black;
   text-shadow: none;
@@ -24,7 +38,7 @@
   opacity: 0.75
 }
 
-
 .activeLink:hover {
   opacity:1 
 }
+

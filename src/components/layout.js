@@ -24,7 +24,7 @@ export default ({ children }) => {
   )
   return (
     <body>
-      <div style={{ position: `relative`, minHeight: `100vh`, maxWidth: 750, margin: `auto`, padding: `0 1rem` }}>
+      <div style={{ position: `relative`, minHeight: `100vh`, maxWidth: 750, margin: `auto` }}>
         <header style={{ margin: `3rem auto 1.5rem` }}>
           <Link to="/" className={ layoutStyles.link }>
             <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
@@ -35,7 +35,7 @@ export default ({ children }) => {
             <ListLink to="/contact/">Contact</ListLink>
           </ul>
         </header> 
-        <div style={{ paddingBottom: `2.5rem`}} >
+        <div className={ layoutStyles.content }>
           {children}
         </div>
         <Footer></Footer>

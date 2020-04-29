@@ -1,67 +1,78 @@
 ---
-title: A Beginner's Introduction to Git
+title: How to use Git and actually understand what you're doing 
 date: "4/26/20"
-description: "What is Git? And why should anyone should use it or GitHub? To answer these questions, this blog dives into what makes Git so useful and provides a tutorial for cloning and initializing your first repository."
+description: "What is Git? And why should anyone should use it or GitHub? To answer these questions, this blog dives into what makes Git so useful and provides a tutorial for initializing your first repository."
 ---
 
-### What we will cover
-* What is git?
+Being able to share projects on GitHub has become a Must Know-How for any developer. 
+
+There are alot of great IDE's out there that make it easy to push and pull your project, however it is my opinion that learning Git on the Command Line first trumps all other options.
+
+Git has some terminology that feels bizarre, if not overly redundant at first. 
+
+Want to push? Okay, just first know you have to commit your branch first. And before that, stage your index. But make sure there isn't merge conflict.
+
+See what I mean? If you can learn what each command does, it will make understanding this puzzling language a lot easier to digest.
+
+Plus, what developer doesnt love being able to work from their command line?
+
+## What we will cover
+* What is Git?
 * What is GitHub?
 * Why use them?
 
 ### What is Git?
-Straight from their website, "Git is a free and open source distributed version control system". What this means is that for FREE, you are able to store any file related to your project or workspace. When using Git, we are going to refer to this workspace as a "repository", specifically a local repository because it will reside on your loca machine.
+Straight from git-scm.com, "Git is a free and open source distributed version control system". 
 
-Initalizing a local repository gives you the power of version control. This means that you can take a snapshot of your project at any point. When using git, we call taking a snapshot like this a commit.
-* If its your first commit, the state of every file is saved.
+Using the Git command line tool gives you complete control over any directory on your computer. Actually... not just the directories on your computer... but we'll get to that part later.
+
+When using Git, this directory controlled by Git is known as a "repository", specifically a local repository because it will reside on your local machine.
+
+Initalizing a local repository gives you the power of version control. This means that you can take a snapshot of your project at any point. When using git, taking a snapshot like this is called a commit.
+* Your first commit saves the state of every file within your repository.
 * If its not your first commit, only the changes since your last commit are saved.
 
-This makes for a smooth landing when your computer starts crashing from a change you made to your code. If you make a change to your project that you later dislike, or find out has some bug in it, you can revert any specific file to a previous version.
+Not only is using version control the best way for devlopers to contribute and collaborate with each other, it makes for a smooth landing the next time your application crashes from an erronous change to your code. 
 
-#### Why use version control?
+### Why use version control?
+
+If you make a change to a working version of your project that you later dislike, or find out has a some bug in it, you can revert all or any specific files to that previous working version.
 
 Pretend you are me back in May 2019 with no git experience. It's 9pm and you have a project due at midnight. You have a working version of your program, but you have three more hours still to tinker with it and make it even more robust. 
 
-Wouldn't it be nice to take a snapshot of this now? The last thing you want to do is what I did, where in trying to add a new feature I actually broke it. And as midnight I approached, I wasted so much time trying to fix what was previously working that I missed my deadline. Don't be like old me. Use version control.
+Wouldn't it be nice to take a snapshot of this now? Don't make the same mistake I made by breaking a working version of this project in the pursuit of something better. As midnight approached, I wasted so much time trying to fix what was previously working that I missed my deadline completely. Don't be like the old me. Use version control.
 
-### What is GitHub?
-We talked about Git already, but one thing I left out is that it is a command line tool. Once youve downloaded Git onto your computer, you can manage the projects on your local machine using git commands.
+## Initializing your Git repository
 
-By linking your local repository with a remote repository on GitHub, you can now take advantage of free cloud storage. Creating an account will allow you to follow along to the tutorial I've created which will introduce you to all of the required commands necessary to start using Git to push your projects to a remote repository.
-
-## Tutorial
-### git clone
-
-To clone a Github repository use the following command:
-```
-git clone https://github.com/RobertBonagura/CS213-Program1.git
-```
-
-You can view a repository first however. Just use your browser to visit the repository first. Not a bad idea to check some foreign source out first before downloading to your computer. Each GitHub repository has a link of the form:<br>
+Find a folder or project on your computer and use your Terminal to change directories into the root directory. 
 
 ```
-https://github.com/<username>/<repository-name>
+cd ~/Path/To/directory
 ```
-
-So mine for the previously mentioned respository is: 
-
+Confirm that you have Git installed on your computer by running the following:
 ```
-https://github.com/RobertBonagura/CS213-Program1<br>
+git --version
 ```
+If your terminal does not output the version of Git you're running, or if your terminal doesn't recognize the git command, you are going to have to refer to the link below to download Git on to your machine.
 
-If you visit a remote repository, you will see a green icon on the right hand side to clone or download. It will then give you the option to either clone with SSH or HTTPS. You can look into SSH but I will describe using HTTPS because it is quicker to setup.
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
-Using HTTPS basically just means you have to provide you Github credentials anytime you push a local repository to a remote one. By taking the time to set up your SSH credentials, you can bypass this process.
+Once you've got a working version of Git, we can begin to create out first repository. Again, make sure you are in the root repository of the 
+```
+git init
+```
+With the above command, you will be able to initialize the current folder as a git repository. Woo-hoo! Now the real fun begins.
 
-Copy the link to clone with HTTPS and then you can use your terminal to execute the `clone` command mentioned above.
+Once a Git repository is initialized much is going to look the same. However, take a look at all of your hidden files in this current directory.
+On Mac and Linux to do this just run the command
+```
+ls -a
+```
+If you initialized the repository correctly, you should be able to see a new friend in the newly created folder `.git`. You can take a peek under the hood of Git by poking around through this folder, but we will save that for another day.
 
-Note the above command will create a folder in whichever directory you are in. Executing this command creates a *local* git repository on your machine.
+For now, lets just review some of the most essential git commands to get started working today.
 
 ## git status
-
-If you executed the clone command properly, you should see a new folder on your machine. This is a **local** git repository based on the **remote** repository on Github.
-
-`cd` into this newly created folder.
 
 The first important command is `git status`. You can execute this now to see read significant details. Your terminal is probably displaying the following two statements:
 
@@ -128,9 +139,41 @@ But wait a second. What is origin?
 3. Make a new repository
 4. update origin branch
 
+
+
+### What is GitHub?
+Once youve downloaded Git onto your computer, you can manage the projects on your local machine using git commands.
+
+By linking your local repository with a remote repository on GitHub, you can now take advantage of free cloud storage. Creating an account will allow you to follow along to the tutorial I've created which will introduce you to all of the required commands necessary to start using Git to push your projects to a remote repository.
+
 ## Merges and Pulling 
 Push to new origin
 
 create pull request
 
 pull updated version into master
+
+To clone a Github repository use the following command:
+```
+git clone https://github.com/RobertBonagura/CS213-Program1.git
+```
+
+You can view a repository first however. Just use your browser to visit the repository first. Not a bad idea to check some foreign source out first before downloading to your computer. Each GitHub repository has a link of the form:<br>
+
+```
+https://github.com/<username>/<repository-name>
+```
+
+So mine for the previously mentioned respository is: 
+
+```
+https://github.com/RobertBonagura/CS213-Program1<br>
+```
+
+If you visit a remote repository, you will see a green icon on the right hand side to clone or download. It will then give you the option to either clone with SSH or HTTPS. You can look into SSH but I will describe using HTTPS because it is quicker to setup.
+
+Using HTTPS basically just means you have to provide you Github credentials anytime you push a local repository to a remote one. By taking the time to set up your SSH credentials, you can bypass this process.
+
+Copy the link to clone with HTTPS and then you can use your terminal to execute the `clone` command mentioned above.
+
+Note the above command will create a folder in whichever directory you are in. Executing this command creates a *local* git repository on your machine.
