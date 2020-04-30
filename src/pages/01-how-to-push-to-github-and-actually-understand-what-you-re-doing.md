@@ -1,13 +1,14 @@
 ---
-title: How to push to GitHub and actually understand what you're doing 
+title: How to push to GitHub and actually understand what you're doing
+author: Bobby Bonagura
 date: "4/26/20"
 featuredImage: ../img/pushing-up-hill_1280.png
 description: "Being able to share projects on GitHub is a must for any developer. Despite how easy it is to copy/paste your way through a tutorial, a thorough understanding of basic Git commands is still essential."
 ---
-There are countless tutorials and StackOverflow answers supplying all the commands you need. 
-### However, copying-and-pasting can only get you so far.
+There are countless tutorials and StackOverflow answers supplying all the commands you need. However,
+### Copying-and-pasting can only get you so far.
 
-It may get your project on GitHub, but once it comes time to manage a merge conflict, you're going to need to have a better understanding of these Git commands.
+It may allow you to push your project onto GitHub. But once it comes time to manage a merge conflict, you're going to need to have a better understanding of these Git commands.
 
 If you have no idea what I'm talking about, and just want to learn how to push your project to GitHub, then this article is for you. 
 
@@ -16,18 +17,59 @@ If you've already pushed to GitHub before, consider whether or not you can answe
 * How can I revert my changes from HEAD to a previous commit?
 * What are the differences between pushing, merging and fetching?
 
-If these questions sound confusing, or if you are unsure of their answers, you probably haven't had anyone explain them to you properly. And that's okay, that's what I'm here for.
+If these questions sound confusing, or if you are unsure of their answers, you probably haven't had anyone explain them to you properly. And that's okay, that's just what I'm here for.
 
 ## First Things First
 
-My biggest piece of advice starts with a simple reminder. Git is such a powerful tool that one can go down a rabbit hole in search of understanding all of the nuanced details -- and that is not what this article is for.
+My biggest piece of advice starts with a simple reminder. Git is such a powerful tool that one can go down a rabbit hole in search of understanding all of it's nuanced details. That is not what this article is for.
 
-The goal of this article is to not tell you everything there is to know about Git. Instead, the goal is show you all of the neccessary commands so that you can share your Git repository to GitHub -- and actually understand what is going on in the process.
+The goal of this article is **not** to tell you everything there is to know about Git. Instead, the goal is show you all of the neccessary commands so that you can get started sharing your Git repository to GitHub -- and actually understand what is going on in the process.
 
+If you want to one day be a Git Ninja, start here. Proficiency in the basics alone is enough to make you stand out among the crowd of new developers. As a student at Rutgers University, it's amazing how many students I have encoutered in classrooms and hackathons that have heard of, or even used Git before, but struggle with some of the basic concepts.
 
+By teaching the other students what I am about to share with you now, I helped developers gain confidence and an understanding of Git. This not only makes for a better team, but gave them a vital skill that is in demand by employers right now.
 
+## Initializing Your Repository
 
+The first thing we want to do is make sure you have Git installed on your machine by running
+```
+$ git --version
+```
+If your terminal doesn't output your current Git version, or doesn't recognize the `git` command for that matter, you are going to need to download it from [Git's official website](https://git-scm.com/downloads).
 
+Once you can can confirm that you have Git on your machine, we can now choose where to place our repository.
+
+To follow along with this tutorial, I recomend choosing an actual project on your computer to push to GitHub. Just keep in mind that we are going to push to repository to GitHub, so make sure that if there is not any private data in this folder. To learn more about keeping files within your repository private, see freeCodeCamp's guide on [how to use .gitignore files](https://guide.freecodecamp.org/git/gitignore/).
+
+### Now that you have a folder selected
+Run the below command in the root directory of the project you wish to place under version control.
+```
+$ git init
+```
+Voilà! It is a thing of beauty, is it not?
+
+So what happened? Let's take a look. Your repository shouldn't seem any different at first. Let's see what happens if we you run the `ls` command with the `-a` flag to reveal all hidden files.
+```
+$ ls -a
+```
+We can now see there is sneaky hidden directory within our project now.
+
+This confirms that we have successfully created our repository. You're more than welcome to snoop around in there, but for now I suggest coming back to it later. 
+
+Right now all you need to understand is that within this special little folder resides all of the magic that makes Git happen. 
+
+With each commit you make, you take a snapshot of the current state of your project. In response, any change is then recorded into this folder. 
+
+## Making Your First Commit
+
+Because we just initialized our repository, the .git folder doesn't contain any snapshots. Let's create one. 
+
+## Conclusion
+So my suggestion is to follow along to this tutorial. Along the way I will do my best explain what is happening and why. 
+
+Then after learning these commands and going through this tutorial, it's important to use them.
+
+I suggest using Git and GitHub for all personal projects. Even essays or word documents. After incorporating it into your workflow becomes natural, it will be much easier to pursue learning some of the more advanced features and functionality that Git has to offer.
 
 ---
 
