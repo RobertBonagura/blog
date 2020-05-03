@@ -6,7 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Big Little Win`,
+    title: `Bright Eyed Solutions`,
+    blogTitle: `Big Little Win`
   },
   plugins: [
     {
