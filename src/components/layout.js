@@ -7,7 +7,7 @@ export default ({ children }) => {
 
   return (
     <body>
-      <div style={{ position: `relative`, minHeight: `100vh`, maxWidth: 750, margin: `auto` }}>
+      <div style={{ position: `relative`, minHeight: `100vh`, margin: `auto` }}>
         <Header></Header>
         <div className={ layoutStyles.content }>
           {children}

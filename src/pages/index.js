@@ -2,7 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Welcome from "../components/welcome"
-import Header from "../components/header"
+import layoutStyles from "../components/layout.module.css"
+import layout from "../components/layout"
 
 export default ({ data }) => (
   <div>

@@ -16,7 +16,7 @@ export default () => {
     `
   )
   return (
-    <header style={{ display: `flex`, margin: `3rem auto 1.5rem` }}>
+    <header style={{ margin: `3rem auto 1.5rem` }}>
       <Link to="/" className={ layoutStyles.link }>
         <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
       </Link>
