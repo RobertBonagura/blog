@@ -1,6 +1,5 @@
 import React from "react"
 import welcomeStyles from "./welcome.module.css"
-import Arrow from "../img/scroll-down.png"
 
 export default () => (
   <div className={ welcomeStyles.container }>
