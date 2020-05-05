@@ -9,10 +9,12 @@ export default ({ children }) => {
     <body>
       <div style={{ position: `relative`, minHeight: `100vh`, margin: `auto` }}>
         <Header></Header>
-        <div className={ layoutStyles.content }>
-          {children}
+        <div className={ layoutStyles.center }>
+          <div className={ layoutStyles.content }>
+            {children}
+          </div>
         </div>
-        <Footer></Footer>
+        <Footer className={ layoutStyles.center }></Footer>
       </div>
     </body>
   )

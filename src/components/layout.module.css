@@ -3,6 +3,11 @@ html {
   margin: 0px;
 }
 
+.center {
+  max-width: 750px;
+  margin: auto;
+}
+
 .content {
   margin: 100px 10px 10px;
   padding-bottom: 2.5rem;
@@ -38,4 +43,3 @@ html {
 .activeLink:hover {
   opacity:1 
 }
-
