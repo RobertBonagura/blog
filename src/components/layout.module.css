@@ -3,6 +3,12 @@ html {
   margin: 0px;
 }
 
+.layoutContainer {
+  position: relative;
+  min-height: 100vh;
+  margin: auto;
+}
+
 .center {
   max-width: 750px;
   margin: auto;

@@ -7,7 +7,7 @@ export default ({ children }) => {
 
   return (
     <body>
-      <div style={{ position: `relative`, minHeight: `100vh`, margin: `auto` }}>
+      <div className={ layoutStyles.layoutContainer }>
         <Header></Header>
         <div className={ layoutStyles.center }>
           <div className={ layoutStyles.content }>
