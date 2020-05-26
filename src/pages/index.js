@@ -17,8 +17,10 @@ export default ({ data }) => (
         building something with them, and then sharing how to with others.
       </p>
     </div>
-    <div className={layoutStyles.grid}>
-      <div style={{ gridArea: `l1` }}>
+    {/* <div className={layoutStyles.grid}> */}
+    <div className={layoutStyles.center}>
+      {/* <div style={{ gridArea: `l1` }}> */}
+      <div style={{ gridArea: `center` }}>
           <Card title="Bright Eyed Solutions is here to help provide answers" >
           <p>Navigating through the current digital age has its challenges.</p>
           <p>That's why We provide help with:
@@ -31,13 +33,15 @@ export default ({ data }) => (
           </p>
         </Card>
       </div>
-      <div style={{ gridArea: `r1`}}>
+      {/* <div style={{ gridArea: `r1`}}> */}
+      <div style={{ gridArea: `center` }}>
         <Card title="Products and Services built with Integrity and Empathy">
           <p>You should not have to overpay server space in order to host your website.</p>
           <p>This means taking a thorough understanding of your business's needs and requirements.</p>
         </Card>    
       </div>
-      <div style={{ gridArea: `l2`}}>
+      {/* <div style={{ gridArea: `l2`}}> */}
+      <div style={{ gridArea: `center` }}>
         <Card title="Get your business noticed">
           <p>Wrapping your head around Search Engine Optimization (SEO) can be challenging at first.</p>
           <p>It is essential in order for search engines to find and display your content.</p>
@@ -46,7 +50,6 @@ export default ({ data }) => (
       </div>
       <div style={{ gridArea: `center`}}>
         <Card title="Have quesitons?">
-          <h4></h4>
           <p>Don't hesistate to ask us</p>
           <p>Contact Form</p>
         </Card>
