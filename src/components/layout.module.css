@@ -32,6 +32,10 @@ html {
   padding-bottom: 2.5rem;
 }
 
+.form {
+  margin: auto;
+  text-align: center;
+}
 
 .link {
   color: black;
