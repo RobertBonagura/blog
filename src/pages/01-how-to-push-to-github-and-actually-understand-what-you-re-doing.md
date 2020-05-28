@@ -1,7 +1,7 @@
 ---
 title: How to push to GitHub and actually understand what you're doing
 author: Bobby Bonagura
-date: "4/26/20"
+date: "5/28/20"
 featuredImage: ../img/pushing-up-hill_1280.png
 description: "Being able to share projects on GitHub is a must for any developer. Despite how easy it is to copy/paste your way through a tutorial, a thorough understanding of basic Git commands is still essential."
 ---
@@ -57,13 +57,13 @@ git init
 ```
 Voilà! It is a thing of beauty, is it not?
 
+#### Can you find the .git folder?
 So what happened? Let's take a look. Your repository shouldn't seem any different at first. Let's see what happens when you run the `ls` command with the `-a` option to reveal all hidden files.
 ```
 $ ls -a
 ```
 You should now see a sneaky hidden directory within your project.
 
-#### Can you find the .git folder?
 This confirms that we have successfully created your repository. You're more than welcome to snoop around in there later, but for now I suggest coming back to this after you've gotten a firm grasp on the fundamentals of this tutorial. 
 
 Right now all you need to understand is that all of the magic that makes Git happen resides inside this folder.
@@ -90,7 +90,7 @@ git add .
 After running either of the two methods above, if you run `git status` again you should see that all of your files are ready to be committed.
 
 ### Why Do We have to Stage Files Before Committing?
-Isn't this a little redundant? It can be. Right now for instance it is considering we want to commit everything in our repository. But the ability to stage files before committing them gives alot of version control power to the developer.
+Isn't this a little redundant? It can be. Right now for instance it is, considering we want to commit everything in our repository. But the ability to stage files before committing them gives alot of version control power to the developer.
 
 Pretend its 5:00pm and you're at work, ready to go home. 
 
@@ -124,12 +124,14 @@ Keep in mind, you are going to have two repositories. You have already created a
 #### Create a repository on GitHub
 If you need help creating one, take a look at GitHub's [offical documentation](https://help.github.com/en/github/getting-started-with-github/create-a-repo) for creating a repository.
 
-You can fork or clone anyone else's remote repository if it's made public, however you will not be able to push directly to it unless you are are an invited collaborator. By default, you have these rights for all of your remote repositories so long as you update your Git configuration settings.
+You can fork or clone anyone else's remote repository if it's made public, however you will not be able to push directly to it unless you own it or are are an invited collaborator. 
+
+By default, you have access for all of your remote repositories so long as you update your Git configuration settings.
 
 #### Update your Git configuration
-Next you want to tell Git that you have a GitHub account. This will allow you to push and pull back and forth to your remote reposiory. 
+You want to tell Git that you have a GitHub account. This will allow you to push and pull back and forth to your remote reposiory. 
 
-You want to update your git configurations in such a way that Git can identify you and your GitHub account. This can be done simply by adding your name, and your email address (the one you created your GitHub account with), as arguments to the `git config` command.
+Update your git configurations in such a way that Git can identify you and your GitHub account. This can be done simply by adding your name, and your email address (the one you created your GitHub account with), as arguments to the `git config` command.
 ```
 git config --global user.name "Your name in quotes"
 git config --global user.email "inQuotes@yourEmail.com"
