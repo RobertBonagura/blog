@@ -5,6 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Card from "../components/card"
 import layoutStyles from "../components/layout.module.css"
+import Form from  "../components//form"
 
 export default ({ data }) => (
   <div className={layoutStyles.layoutContainer}>
@@ -52,17 +53,7 @@ export default ({ data }) => (
       <div style={{ gridArea: `center`}}>
         <Card title="Have quesitons?">
           <p>Leave your information so one of our representatives can get in contact with you.</p>
-            <form id="contact-form" action="submitToAPI(event)" method="post">
-              <h4>Name:</h4>
-              <input type="text" style={{height:`35px`, width:`100%`}} id="name-input" placeholder="Enter name here…" class="form-control"/><br/>
-              <h4>Phone:</h4>
-              <input type="phone" style={{height:`35px`, width:`100%`}} id="phone-input" placeholder="Enter phone number" class="form-control"/><br/>
-              <h4>Email:</h4>
-              <input type="email" style={{height:`35px`, width:`100%`}} id="email-input" placeholder="Enter email here…" class="form-control"/><br/>
-              <h4>How can we help you?</h4>
-              <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control"></textarea><br/>
-              <button type="submit" onClick="submitToAPI(event)" class="btn btn-primary">Submit</button> 
-            </form>
+            <Form></Form>
         </Card>
       </div>
     </div>
