@@ -23,7 +23,7 @@ export default ({ data }) => (
       <div style={{ gridArea: `center` }}>
           <Card title="Bright Eyed Solutions is here to help provide answers" >
           <p>Navigating through the current digital age has its challenges.</p>
-          <p>That's why We provide help with:
+          <p>That's why we provide help with:
             <ul>
               <li>Designing a website for your business</li>
               <li>Finding the right domain name</li>
