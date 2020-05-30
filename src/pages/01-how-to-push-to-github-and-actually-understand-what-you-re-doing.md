@@ -14,7 +14,7 @@ If you have no idea what I'm talking about, and just want to learn how to push y
 
 If you've already pushed to GitHub before, consider whether or not you can answer these questions.
 * Why do files need to be staged for commit?
-* How can I revert my changes from HEAD to a previous commit?
+* What is a remote repository?
 * What are the differences between pushing, merging and fetching?
 
 If these questions sound confusing, or if you are unsure of their answers, you probably haven't had anyone explain them to you properly. And that's okay, that's just what I'm here for.
@@ -169,6 +169,15 @@ By default your remote repository will contain a single branch named master.
 You can learn about creating and switching branches [here](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell), the documentation is pretty straight-forward.
 
 And that's it. You've just pushed to GitHub!
+
+### Pulling, Merging and Fetching
+Now that we have just pushed to GitHub, lets talk about how we can move files in the opposite direction. Onto our local machine, from a remote repository.
+
+#### Pulling
+
+#### Merging
+
+#### Fetching
 
 ## Conclusion
 My suggestion after following along to this tutorial is to continue using Gitt and GitHub for all personal projects. Even essays or word documents. 
