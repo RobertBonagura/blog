@@ -9,8 +9,8 @@ const ListLink = props => (
   </li>
 )
 
-export default () => (
-  <ul style={{ listStyle: `none`, float: `right` }}>
+export default ( props ) => (
+  <ul style={{ listStyle: `none`, float: `right`, marginTop: `0rem` }}>
     <ListLink to="/">Home</ListLink>
     <ListLink to="/about/">About</ListLink>
     <ListLink to="/contact/">Contact</ListLink>

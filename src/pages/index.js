@@ -4,8 +4,8 @@ import Welcome from "../components/welcome"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Card from "../components/card"
+import Form from "../components/form"
 import layoutStyles from "../components/layout.module.css"
-import Form from  "../components//form"
 
 export default ({ data }) => (
   <div className={layoutStyles.layoutContainer}>
@@ -14,37 +14,33 @@ export default ({ data }) => (
     <div className={layoutStyles.center}>
       <h1>{data.site.siteMetadata.title}</h1>
       <p>
-        What do I like to do? Lots of course. One thing for sure is learning new technologies, 
-        building something with them, and then sharing how to with others.
+        Navigating through the current digital age has its challenges. That is why Bright Eyed Solutions is here to help.
+        By offering the answers and results your business needs, we can help you take your business forward to the next level.
       </p>
     </div>
     {/* <div className={layoutStyles.grid}> */}
     <div className={layoutStyles.center}>
       {/* <div style={{ gridArea: `l1` }}> */}
       <div style={{ gridArea: `center` }}>
-          <Card title="Bright Eyed Solutions is here to help provide answers" >
-          <p>Navigating through the current digital age has its challenges.</p>
-          <p>That's why we're here to help:</p>
-          <ul>
-            <li>By designing a website for your business</li>
-            <li>Finding the right domain name</li>
-            <li>Hosting your website</li>
-            <li>Getting the most SEO from your website</li>
-          </ul>
+          <Card title="We specialize in:" >
+            <ul>
+              <li>Designing a website for your business</li>
+              <li>Finding the right domain name</li>
+              <li>Hosting your website</li>
+              <li>Getting the most SEO from your website</li>
+            </ul>
         </Card>
       </div>
       {/* <div style={{ gridArea: `r1`}}> */}
       <div style={{ gridArea: `center` }}>
         <Card title="Products and Services built with Integrity and Empathy">
-          <br></br>
-          <p>You should not have to overpay for server space you're not using in order to host your website.</p>
+          <p>You should not have to overpay server space in order to host your website.</p>
           <p>This means taking a thorough understanding of your business's needs and requirements.</p>
         </Card>    
       </div>
       {/* <div style={{ gridArea: `l2`}}> */}
       <div style={{ gridArea: `center` }}>
         <Card title="Get your business noticed">
-          <br></br>
           <p>Wrapping your head around Search Engine Optimization (SEO) can be challenging at first.</p>
           <p>It is essential in order for search engines to find and display your content.</p>
           <p>Our websites are built with SEO in mind so that your customers can find your content.</p>
@@ -52,8 +48,8 @@ export default ({ data }) => (
       </div>
       <div style={{ gridArea: `center`}}>
         <Card title="Have quesitons?">
-          <p>Leave your information so one of our representatives can get in contact with you.</p>
-            <Form></Form>
+          <p>Don't hesistate to ask us</p>
+          <Form></Form>
         </Card>
       </div>
     </div>

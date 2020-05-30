@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
+import BlogLayout from "../components/blogLayout"
 import layoutStyles from "../components/layout.module.css"
 
 
@@ -10,13 +10,13 @@ export default ({ data }) => {
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
   return (
-    <Layout>
+    <BlogLayout>
       <div className={layoutStyles.blogPostContainer} >
         <h1>{post.frontmatter.title}</h1>
         <Img fluid={featuredImgFluid} style={{marginTop: "40px", marginBottom:"80px"}}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-    </Layout>
+    </BlogLayout>
   )
 }
 export const query = graphql`
