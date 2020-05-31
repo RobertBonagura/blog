@@ -1,5 +1,5 @@
 import React from "react"
-import welcomeStyles from "./welcome.module.css"
+import welcomeStyles from "./styles/welcome.module.css"
 
 export default () => (
   <div className={ welcomeStyles.container }>

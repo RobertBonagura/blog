@@ -1,5 +1,5 @@
 import React from "react"
-import cardstyle from "./card.module.css"
+import cardstyle from "./styles/card.module.css"
 
 export default (props) => (
   <div to ="/about" className={cardstyle.card}>

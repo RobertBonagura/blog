@@ -5,7 +5,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import Card from "../components/card"
 import Form from "../components/form"
-import layoutStyles from "../components/layout.module.css"
+import layoutStyles from "../components/styles/layout.module.css"
 
 export default ({ data }) => (
   <div className={layoutStyles.layoutContainer}>

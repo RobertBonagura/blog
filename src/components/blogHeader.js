@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Nav from "./nav"
-import layoutStyles from "./layout.module.css"
+import layoutStyles from "./styles/layout.module.css"
 
 export default () => {
   const data = useStaticQuery(

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import layoutStyles from "./layout.module.css"
+import layoutStyles from "./styles/layout.module.css"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>

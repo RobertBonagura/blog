@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import BlogLayout from "../components/blogLayout"
-import layoutStyles from "../components/layout.module.css"
+import layoutStyles from "../components/styles/layout.module.css"
 
 
 export default ({ data }) => {

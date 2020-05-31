@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import BlogLayout from "../components/blogLayout"
-import layoutStyles from "../components/layout.module.css"
+import layoutStyles from "../components/styles/layout.module.css"
 import Card from "../components/card"
 
 export default ({ data }) => (
