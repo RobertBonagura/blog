@@ -9,7 +9,10 @@ import layoutStyles from "../components/styles/layout.module.css"
 
 export default ({ data }) => (
   <div className={layoutStyles.layoutContainer}>
-    <Welcome></Welcome>
+    <Welcome 
+        title={data.site.siteMetadata.title} 
+        subtitle="Where quality matters">
+    </Welcome>
     <Header></Header>
     <div className={layoutStyles.center}>
       <h1>{data.site.siteMetadata.title}</h1>
