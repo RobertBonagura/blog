@@ -15,7 +15,7 @@ If you have no idea what I'm talking about, and just want to learn how to push y
 If you've already pushed to GitHub before, consider whether or not you can answer these questions.
 * Why do files need to be staged for commit?
 * What is a remote repository?
-* What are the differences between pushing, merging and fetching?
+* How do I configure my GitHub account with my local repository?
 
 If these questions sound confusing, or if you are unsure of their answers, you probably haven't had anyone explain them to you properly. And that's okay, that's just what I'm here for.
 
@@ -25,7 +25,7 @@ My biggest piece of advice starts with a simple reminder. Because Git is such a 
 
 The goal of this article is **not** to tell you everything there is to know about Git. Instead, the goal is to show you all of the neccessary commands so that you can get started sharing your Git repository to GitHub -- and actually understand what is going on in the process.
 
-If you want to one day be a Git Ninja, start here. Proficiency in the basics alone is enough to make you stand out among the crowd of new developers. As a student at Rutgers University, it's amazing how many students I have encoutered in classrooms and hackathons that have experience using Git, but struggle with some of the basic concepts.
+If you want to one day be a Git Ninja, start here. Proficiency in the basics alone is enough to make you stand out among the crowd of new developers. As a student at Rutgers University, it's amazing how many students I have encountered in classrooms and hackathons that have experience using Git, but struggle with some of the basic concepts.
 
 By teaching other students what I'm going to share with you now, I've helped developers gain confidence and an understanding of Git. This not only makes for a better team, but gives a vital skill that is in demand by employers right now.
 
@@ -34,6 +34,8 @@ The first thing we want to do is make sure you have Git installed on your machin
 ```
 git --version
 ```
+
+*If you're running Windows, you may want to search for a Git Bash window
 #### Download Git
 If your terminal doesn't output your current Git version, or doesn't recognize the `git` command for that matter, you are going to need to download it from [Git's official website](https://git-scm.com/downloads).
 
@@ -42,7 +44,7 @@ Once you can can confirm that you have Git on your machine, you now must choose 
 #### Select a folder to push to GitHub
 To follow along with this tutorial, I recomend choosing an actual project on your computer to push to GitHub. Just keep in mind that we are going to push this repository to GitHub, which means it is going to be made public. Make sure there is no private data in this folder. To learn more about keeping files within your repository private, see freeCodeCamp's guide on [how to use .gitignore files](https://guide.freecodecamp.org/git/gitignore/).
 
-If you don't have a folder you want to share at this time, you can create one with a few sample text files for now. If you are running Mac or Linux, you can create a folder with some text values like this:
+If you don't have a folder you want to share at this time, you can create one with a few sample text files for now. In your Bash terminal you can create a folder with some text values like this:
 ```
 mkdir git-tutorial
 cd git-tutorial
@@ -55,10 +57,10 @@ Run the below command in the root directory of the project you wish to place und
 ```
 git init
 ```
-Voilà! It is a thing of beauty, is it not?
+Voilà! And that does it. So what happened?
 
-#### Can you find the .git folder?
-So what happened? Let's take a look. Your repository shouldn't seem any different at first. Let's see what happens when you run the `ls` command with the `-a` option to reveal all hidden files.
+#### Let's take a deeper look
+ Can you find the .git folder? Your repository shouldn't seem any different at first. Let's see what happens when you run the `ls` command with the `-a` option to reveal all hidden files.
 ```
 $ ls -a
 ```
@@ -72,9 +74,9 @@ With each commit you make, you take a snapshot of the current state of your proj
 
 ## Making Your First Commit
 
-Because you just initialized your repository, the .git folder doesn't contain any commits yet. No snapshots have been taken yet. Let's create one. 
+Because you just initialized your repository, the .git folder doesn't contain any commits yet. No snapshots have been taken. Let's create one. 
 
-First thing we need to do is stage our files. Run the following command.
+First thing we need to do is stage our files by running the following command.
 ```
 git status
 ```
@@ -96,17 +98,7 @@ Pretend its 5:00pm and you're at work, ready to go home.
 
 You've been working on Feature A and Feature B for a few hours now. Feature A is all done, but Feature B still needs some work. You don't want to work all night and you don't want to commit Feature B because it will break your project. You do however, want to commit and push Feature A.
 
-The above scenario might look something like this.
-
-![](../img/git-commit.png)
-
-In this case it is really useful to simply run the commands shown below. 
-
-Using the asterisk by the way, is shorthand for adding all files in the preceding folder.
-
-As a result `git status` shows us
-
-![](../img/git-features.png)
+In this case it is really useful to be able to push only a subset of all the files you've modified.
 
 ### Now That You've Staged All of Your Files,
 You are ready to commit. All that's left is to run the following
@@ -149,8 +141,6 @@ git remote add origin <remote-repository-URL>
 ```
 For the remote repository URL, click the green "Clone or download" button pictured below and copy the link that emerges. For now, just clone with HTTPS, though I suggest learning how to [clone with SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) at some point later.
 
-![](../img/github.png)
-
 This URL is the same as the remote repository's main page URL. You can copy the link from your browser, just be sure to append `.git` on to the end of it.
 
 #### What is origin?
@@ -170,16 +160,7 @@ You can learn about creating and switching branches [here](https://git-scm.com/b
 
 And that's it. You've just pushed to GitHub!
 
-### Pulling, Merging and Fetching
-Now that we have just pushed to GitHub, lets talk about how we can move files in the opposite direction. Onto our local machine, from a remote repository.
-
-#### Pulling
-
-#### Merging
-
-#### Fetching
-
 ## Conclusion
-My suggestion after following along to this tutorial is to continue using Gitt and GitHub for all personal projects. Even essays or word documents. 
+After following along to this tutorial I suggest continuing to use Git and GitHub for all personal projects. Even essays or word documents. (Think of it as free cloud storage!)
 
-After incorporating this into your workflow starts to feel more natural, it will be much easier to pursue learning some of the more advanced features and functionality that Git has to offer.
+After incorporating this into your workflow, using Git will start to feel more natural and it will be much easier to pursue learning some of the more advanced features and functionality that Git has to offer.
