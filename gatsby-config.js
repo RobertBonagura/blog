@@ -13,7 +13,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "bright-eyed-solutions"
+        bucketName: "bright-eyed-solutions",
+        protocol: "https",
+        
       },
     },
     {
